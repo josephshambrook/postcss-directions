@@ -19,6 +19,12 @@
 }
 ```
 
+## Install
+
+```js
+npm i --save-dev postcss-directions
+```
+
 ## Usage
 
 ```js
