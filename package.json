@@ -1,29 +1,36 @@
 {
-  "name": "PLUGIN_NAME",
-  "version": "0.0.0",
-  "description": "PostCSS plugin PLUGIN_DESC",
+  "name": "postcss-directions",
+  "version": "1.0.0",
+  "description": "PostCSS plugin to convert properties between rtl and ltr. Just prefix usual CSS properties with `-ltr-` or `-rtl-`.",
   "keywords": [
     "postcss",
     "css",
-    "postcss-plugin"KEYWORDS
+    "postcss-plugin",
+    "rtl",
+    "ltr",
+    "directions"
   ],
-  "author": "AUTHOR_NAME <AUTHOR_EMAIL>",
+  "author": "Joseph Shambrook <josephshambrook@googlemail.com>",
   "license": "MIT",
-  "repository": "GITHUB_NAME/PLUGIN_NAME",
+  "repository": "josephshambrook/postcss-directions",
   "bugs": {
-    "url": "https://github.com/GITHUB_NAME/PLUGIN_NAME/issues"
+    "url": "https://github.com/josephshambrook/postcss-directions/issues"
   },
-  "homepage": "https://github.com/GITHUB_NAME/PLUGIN_NAME",
+  "homepage": "https://github.com/josephshambrook/postcss-directions",
   "dependencies": {
     "postcss": "^5.2.6"
   },
   "devDependencies": {
-    "jest": "^17.0.2",
+    "ava": "^0.17.0",
     "eslint": "^3.10.2",
-    "eslint-config-postcss": "^2.0.2"
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^17.0.2",
+    "postcss": "^5.2.6"
   },
   "scripts": {
-    "test": "jest && eslint *.js"
+    "ava": "ava",
+    "eslint": "eslint *.js",
+    "test": "npm run ava && npm run eslint"
   },
   "eslintConfig": {
     "extends": "eslint-config-postcss/es5",
